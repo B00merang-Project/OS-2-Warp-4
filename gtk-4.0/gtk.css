@@ -108,9 +108,9 @@ label:disabled {
   color: #686868; }
   button label:disabled {
     color: inherit; }
-  > selection label:disabled {
+  label:disabled > selection {
     color: #757575; }
-    > selection label:disabled:backdrop {
+    label:disabled > selection:backdrop {
       color: #757575; }
 
 label.error {
@@ -2078,34 +2078,46 @@ combobox:drop(active) button.combo {
   box-shadow: inset 0 0 0 1px #828282;
   caret-color: #828282; }
 
-decoration {
-  background-color: #CFCFCF;
-  border-radius: 0px 0px 0 0;
-  border-width: 0;
-  padding: 2px;
-  box-shadow: inset -2px -2px #b0b0b0, inset 2px 2px #e9e9e9, inset -1px -1px #878787, inset 1px 1px #f1f1f1; }
-  .maximized decoration, .fullscreen decoration, .tiled decoration, .tiled-top decoration, .tiled-right decoration, .tiled-bottom decoration, .tiled-left decoration {
-    border-radius: 0; }
-  .popup decoration {
-    box-shadow: none; }
-  .csd.popup decoration {
-    border-radius: 0px;
-    box-shadow: none;
-    padding: 0; }
-  .ssd decoration {
+window {
+  border-width: 0px;
+  padding: 2px; }
+  window.csd {
+    box-shadow: inset -2px -2px #b0b0b0, inset 2px 2px #e9e9e9, inset -1px -1px #878787, inset 1px 1px #f1f1f1;
+    margin: 0px;
     border-radius: 0px 0px 0 0; }
-    .ssd decoration.maximized {
-      border-radius: 0;
-      padding: 0; }
-  tooltip.csd decoration {
-    border-radius: 0px;
-    box-shadow: none;
-    padding: 0; }
-  .solid-csd decoration {
-    margin: 1px;
-    border-radius: 0px;
-    background-color: rgba(255, 255, 255, 0.95);
+    window.csd:backdrop {
+      box-shadow: inset -2px -2px #b0b0b0, inset 2px 2px #e9e9e9, inset -1px -1px #878787, inset 1px 1px #f1f1f1;
+      transition: 200ms ease-out; }
+    window.csd.popup {
+      border-radius: 0px;
+      box-shadow: none; }
+    window.csd.dialog.message {
+      border-radius: 0px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.35); }
+  window.solid-csd {
+    margin: 0;
+    padding: 4px;
+    border: solid 1px #878787;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 4px #878787, inset 0 0 0 3px #CFCFCF; }
+    window.solid-csd:backdrop {
+      box-shadow: inset 0 0 0 4px #878787, inset 0 0 0 3px #CFCFCF; }
+  window.maximized, window.fullscreen {
+    border-radius: 0;
     box-shadow: none; }
+  window.tiled, window.tiled-top, window.tiled-left, window.tiled-right, window.tiled-bottom {
+    border-radius: 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35), 0 0 0 20px transparent; }
+    window.tiled:backdrop, window.tiled-top:backdrop, window.tiled-left:backdrop, window.tiled-right:backdrop, window.tiled-bottom:backdrop {
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), 0 0 0 20px transparent; }
+  window.popup {
+    box-shadow: none; }
+  window.ssd {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4); }
+
+tooltip.csd {
+  border-radius: 0px;
+  box-shadow: none; }
 
 shortcuts-section {
   margin: 20px; }
