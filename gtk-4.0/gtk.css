@@ -685,120 +685,88 @@ searchbar {
 .nautilus-window .searchbar-container {
   margin-top: -1px; }
 
-infobar {
-  border: none; }
+infobar > revealer > box {
+  padding: 8px;
+  border-spacing: 12px; }
 
-.info {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #495eeb;
+infobar.info > revealer > box {
+  border: 1px solid #495eeb;
   color: #FFFFFF;
   background-image: none;
   background-color: #8292FF; }
-  .info button {
+  infobar.info > revealer > box button {
     border-color: #495eeb;
     color: #FFFFFF;
     background-image: none;
     background-color: #a1adff; }
-    .info button:hover {
+    infobar.info > revealer > box button:hover {
       border-color: #566af1;
       background-color: #a9b4ff; }
-    .info button:active {
+    infobar.info > revealer > box button:active {
       border-color: #2e40b9;
       background-color: #7284fb; }
-      .info button:active:hover {
-        border-color: #566af1; }
-    .info button.close {
-      color: #FFFFFF; }
-      .info button.close:hover {
-        background-color: rgba(255, 255, 255, 0.2); }
-      .info button.close:active {
-        color: #FFFFFF;
-        background-color: rgba(0, 0, 0, 0.1); }
 
-.warning {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #eeee68;
+infobar.warning > revealer > box {
+  border: 1px solid #eeee68;
   color: #FFFFFF;
   background-image: none;
   background-color: #FFFFAD; }
-  .warning button {
+  infobar.warning > revealer > box button {
     border-color: #eeee68;
     color: #FFFFFF;
     background-image: none;
     background-color: #ffffcf; }
-    .warning button:hover {
+    infobar.warning > revealer > box button:hover {
       border-color: #f4f478;
       background-color: #ffffd8; }
-    .warning button:active {
+    infobar.warning > revealer > box button:active {
       border-color: #cccc34;
       background-color: #fcfc9a; }
-      .warning button:active:hover {
-        border-color: #f4f478; }
-    .warning button.close {
-      color: #FFFFFF; }
-      .warning button.close:hover {
-        background-color: rgba(255, 255, 255, 0.2); }
-      .warning button.close:active {
-        color: #FFFFFF;
-        background-color: rgba(0, 0, 0, 0.1); }
 
-.question {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #707070;
+infobar.question > revealer > box {
+  border: 1px solid #707070;
   color: #FFFFFF;
   background-image: none;
   background-color: #8C8C8C; }
-  .question button {
+  infobar.question > revealer > box button {
     border-color: #707070;
     color: #FFFFFF;
     background-image: none;
     background-color: #979797; }
-    .question button:hover {
+    infobar.question > revealer > box button:hover {
       border-color: #777777;
       background-color: #9a9a9a; }
-    .question button:active {
+    infobar.question > revealer > box button:active {
       border-color: #545454;
       background-color: #858585; }
-      .question button:active:hover {
-        border-color: #777777; }
-    .question button.close {
-      color: #FFFFFF; }
-      .question button.close:hover {
-        background-color: rgba(255, 255, 255, 0.2); }
-      .question button.close:active {
-        color: #FFFFFF;
-        background-color: rgba(0, 0, 0, 0.1); }
 
-.error {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #b78c7d;
+infobar.error > revealer > box {
+  border: 1px solid #b78c7d;
   background-color: #D7B6AA;
   background-image: none;
   color: #FFFFFF; }
-  .error button {
+  infobar.error > revealer > box button {
     border-color: #b78c7d;
     color: #FFFFFF;
     background-image: none;
     background-color: #e2c7be; }
-    .error button:hover {
+    infobar.error > revealer > box button:hover {
       border-color: #c09788;
       background-color: #e5ccc3; }
-    .error button:active {
+    infobar.error > revealer > box button:active {
       border-color: #8c685b;
       background-color: #d0ab9e; }
-      .error button:active:hover {
-        border-color: #c09788; }
-    .error button.close {
-      color: #FFFFFF; }
-      .error button.close:hover {
-        background-color: rgba(255, 255, 255, 0.2); }
-      .error button.close:active {
-        color: #FFFFFF;
-        background-color: rgba(0, 0, 0, 0.1); }
+
+infobar .close {
+  color: #FFFFFF;
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none; }
+  infobar .close:hover {
+    background-color: rgba(255, 255, 255, 0.2); }
+  infobar .close:active {
+    background-color: rgba(0, 0, 0, 0.1); }
 
 headerbar {
   padding: 2px;
