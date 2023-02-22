@@ -37,7 +37,7 @@ textview > text {
   background-color: transparent; }
   textview > text:disabled {
     color: #686868;
-    background-color: #c5c5c5; }
+    background-color: #686868; }
   textview > text:selected:focus, textview > text:selected {
     color: #FFFFFF;
     background-color: #828282; }
@@ -45,8 +45,10 @@ textview > text {
     color: #FFFFFF;
     background-color: #828282; }
   textview > text > selection {
+    color: #FFFFFF;
     background-color: #828282; }
     textview > text > selection:focus-within {
+      color: #FFFFFF;
       background-color: #828282; }
 
 textview:drop(active) {
@@ -687,74 +689,71 @@ searchbar {
 
 infobar > revealer > box {
   padding: 8px;
-  border-spacing: 12px; }
+  border-spacing: 12px;
+  box-shadow: none; }
 
 infobar.info > revealer > box {
-  border: 1px solid #495eeb;
+  border: 1px solid #8292FF;
   color: #FFFFFF;
   background-image: none;
   background-color: #8292FF; }
-  infobar.info > revealer > box button {
-    border-color: #495eeb;
+  infobar.info > revealer > box button:not(.close) {
+    border-color: transparent;
     color: #FFFFFF;
     background-image: none;
-    background-color: #a1adff; }
-    infobar.info > revealer > box button:hover {
-      border-color: #566af1;
+    background-color: #a1adff;
+    box-shadow: none; }
+    infobar.info > revealer > box button:not(.close):hover {
       background-color: #a9b4ff; }
-    infobar.info > revealer > box button:active {
-      border-color: #2e40b9;
+    infobar.info > revealer > box button:not(.close):active {
       background-color: #7284fb; }
 
 infobar.warning > revealer > box {
-  border: 1px solid #eeee68;
+  border: 1px solid #FFFFAD;
   color: #FFFFFF;
   background-image: none;
   background-color: #FFFFAD; }
-  infobar.warning > revealer > box button {
-    border-color: #eeee68;
+  infobar.warning > revealer > box button:not(.close) {
+    border-color: transparent;
     color: #FFFFFF;
     background-image: none;
-    background-color: #ffffcf; }
-    infobar.warning > revealer > box button:hover {
-      border-color: #f4f478;
+    background-color: #ffffcf;
+    box-shadow: none; }
+    infobar.warning > revealer > box button:not(.close):hover {
       background-color: #ffffd8; }
-    infobar.warning > revealer > box button:active {
-      border-color: #cccc34;
+    infobar.warning > revealer > box button:not(.close):active {
       background-color: #fcfc9a; }
 
 infobar.question > revealer > box {
-  border: 1px solid #707070;
+  border: 1px solid #8C8C8C;
   color: #FFFFFF;
   background-image: none;
   background-color: #8C8C8C; }
-  infobar.question > revealer > box button {
-    border-color: #707070;
+  infobar.question > revealer > box button:not(.close) {
+    border-color: transparent;
     color: #FFFFFF;
     background-image: none;
-    background-color: #979797; }
-    infobar.question > revealer > box button:hover {
-      border-color: #777777;
+    background-color: #979797;
+    box-shadow: none; }
+    infobar.question > revealer > box button:not(.close):hover {
       background-color: #9a9a9a; }
-    infobar.question > revealer > box button:active {
-      border-color: #545454;
+    infobar.question > revealer > box button:not(.close):active {
       background-color: #858585; }
 
 infobar.error > revealer > box {
-  border: 1px solid #b78c7d;
+  border: 1px solid #D7B6AA;
   background-color: #D7B6AA;
   background-image: none;
   color: #FFFFFF; }
-  infobar.error > revealer > box button {
-    border-color: #b78c7d;
+  infobar.error > revealer > box button:not(.close) {
+    border-color: transparent;
     color: #FFFFFF;
     background-image: none;
-    background-color: #e2c7be; }
-    infobar.error > revealer > box button:hover {
-      border-color: #c09788;
+    background-color: #e2c7be;
+    box-shadow: none; }
+    infobar.error > revealer > box button:not(.close):hover {
       background-color: #e5ccc3; }
-    infobar.error > revealer > box button:active {
-      border-color: #8c685b;
+    infobar.error > revealer > box button:not(.close):active {
       background-color: #d0ab9e; }
 
 infobar .close {
@@ -764,9 +763,9 @@ infobar .close {
   background-image: none;
   box-shadow: none; }
   infobar .close:hover {
-    background-color: rgba(255, 255, 255, 0.2); }
+    background-color: rgba(255, 255, 255, 0.1); }
   infobar .close:active {
-    background-color: rgba(0, 0, 0, 0.1); }
+    background-color: rgba(0, 0, 0, 0.05); }
 
 headerbar {
   padding: 2px;
