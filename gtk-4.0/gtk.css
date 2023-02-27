@@ -451,16 +451,13 @@ editablelabel > stack > text > selection {
 
 button {
   padding: 4px 8px;
-  border-style: solid;
-  border-width: 1px;
   border-radius: 0px;
+  border: 1px solid #878787;
   color: #000000;
-  border-color: #878787;
   border-bottom-color: white;
   border-right-color: white;
   background-color: #CFCFCF;
-  box-shadow: inset -2px -2px #878787, inset 2px 2px white;
-  outline-style: none; }
+  box-shadow: inset -2px -2px #878787, inset 2px 2px white; }
   button:active, button:checked {
     color: #000000;
     border-color: #878787;
@@ -479,8 +476,9 @@ button {
     border-color: transparent;
     border-radius: 0px;
     color: #000000;
-    box-shadow: none;
-    background-color: transparent; }
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none; }
     button.flat:hover {
       color: #000000;
       border-color: #878787;
@@ -502,10 +500,8 @@ button {
       background-color: transparent; }
 
 button.destructive-action {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #ac9288;
   border-radius: 0px;
+  border: 1px solid #ac9288;
   color: #fbf8f7;
   background-color: #D7B6AA; }
   button.destructive-action:hover {
@@ -656,8 +652,9 @@ toolbar {
     border-color: transparent;
     border-radius: 0px;
     color: #000000;
-    box-shadow: none;
-    background-color: transparent; }
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none; }
     toolbar button.flat:hover {
       color: #000000;
       border-color: #878787;
