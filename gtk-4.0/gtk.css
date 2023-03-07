@@ -457,6 +457,7 @@ button {
   border-bottom-color: white;
   border-right-color: white;
   background-color: #CFCFCF;
+  background-image: none;
   box-shadow: inset -2px -2px #878787, inset 2px 2px white; }
   button:active, button:checked {
     color: #000000;
@@ -1256,13 +1257,12 @@ treeview ~ scrollbar.vertical {
   margin-top: -1px; }
 
 switch {
-  outline-offset: -4px;
   margin: 0px;
-  color: #000000;
   border-radius: 0px;
   border: 1px solid #878787;
   border-bottom-color: white;
   border-right-color: white;
+  color: #000000;
   background-color: #CFCFCF;
   box-shadow: inset 1px 1px #878787, inset -1px -1px white; }
   switch:checked {
@@ -1272,16 +1272,19 @@ switch {
     color: #686868;
     border-color: #c5c5c5;
     background-color: #c5c5c5; }
-  switch slider {
-    margin: 0;
+  switch > slider {
+    margin: 0px;
+    min-height: 24px;
+    min-width: 38px;
     border-radius: 0px;
-    color: #000000;
     border: 1px solid #878787;
     border-top-color: white;
     border-left-color: white;
-    box-shadow: inset -1px -1px #878787, inset 1px 1px white;
-    background-color: #CFCFCF; }
-  switch:disabled slider {
+    color: #000000;
+    background-color: #CFCFCF;
+    background-image: none;
+    box-shadow: inset -1px -1px #878787, inset 1px 1px white; }
+  switch:disabled > slider {
     background-color: #c5c5c5; }
 
 checkbutton.text-button, radiobutton.text-button {
