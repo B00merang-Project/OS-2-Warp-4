@@ -1248,8 +1248,7 @@ scrollbar {
     background-color: #CFCFCF;
     background-position: center center;
     background-repeat: no-repeat;
-    box-shadow: inset -1px 0 #878787, inset 0 -1px #878787, inset 1px 0 white, inset 0 1px white;
-    margin: 0px; }
+    box-shadow: inset -1px 0 #878787, inset 0 -1px #878787, inset 1px 0 white, inset 0 1px white; }
   scrollbar.horizontal > range > trough > slider {
     background-image: url("assets/handle-horiz.png");
     background-size: 12px 4px; }
@@ -1272,6 +1271,8 @@ scrollbar {
     margin-right: 1px; }
   scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
     opacity: 1; }
+    scrollbar.overlay-indicator:not(.dragging):not(.hovering) > range > trough > slider {
+      margin: 0px; }
     scrollbar.overlay-indicator.horizontal:not(.dragging):not(.hovering) > range > trough > slider {
       min-width: 45px;
       min-height: 12px; }
