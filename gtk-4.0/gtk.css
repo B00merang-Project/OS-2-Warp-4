@@ -1496,18 +1496,19 @@ progressbar {
   font-size: smaller;
   color: gray; }
   progressbar > trough {
-    border: 1px solid #878787;
     border-radius: 0px;
-    background-color: #CFCFCF;
+    border: 1px solid #878787;
     border-bottom-color: white;
     border-right-color: white;
+    background-color: #CFCFCF;
     box-shadow: inset 1px 0 #878787, inset 0 1px #878787, inset -1px 0 white, inset 0 -1px white; }
   progressbar > trough > progress {
-    border: none;
     border-radius: 0px;
-    background-image: linear-gradient(to bottom, black, #878787 10%, white, #878787 90%, black); }
+    border: none; }
   progressbar.vertical > trough > progress {
     background-image: linear-gradient(to right, black, #878787 10%, white, #878787 90%, black); }
+  progressbar.horizontal > trough > progress {
+    background-image: linear-gradient(to bottom, black, #878787 10%, white, #878787 90%, black); }
   progressbar.horizontal > trough {
     min-width: 150px; }
   progressbar.vertical > trough {
